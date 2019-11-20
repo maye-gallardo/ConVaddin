@@ -1,0 +1,195 @@
+-------------------------------------------------------------------------------
+Test set: ConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 14, Errors: 1, Skipped: 0, Time elapsed: 1.073 s <<< FAILURE! - in ConnectionTest
+selectListenCurrentMessageShouldShowActualMessages  Time elapsed: 1.006 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "No messages.
+Enter 1 to listen to the current message
+Enter 2 to save the current message
+Enter 3 to delete the current message
+Enter 4 to return to the main menu"
+);
+-> at ConnectionTest.selectListenCurrentMessageShouldShowActualMessages(ConnectionTest.java:184)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.selectListenCurrentMessageShouldShowActualMessages(ConnectionTest.java:184)
+
+dialExistingMailbox  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak("Hola Mundo:");
+-> at ConnectionTest.dialExistingMailbox(ConnectionTest.java:36)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.dialExistingMailbox(ConnectionTest.java:36)
+
+setPasswordShouldShowNewPassword  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter mailbox number followed by #"
+);
+-> at ConnectionTest.setPasswordShouldShowNewPassword(ConnectionTest.java:95)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.setPasswordShouldShowNewPassword(ConnectionTest.java:95)
+
+changePassCodeShouldShowTheMainMenu  Time elapsed: 0.006 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to your messages
+Enter 2 to change your passcode
+Enter 3 to change your greeting"
+);
+-> at ConnectionTest.changePassCodeShouldShowTheMainMenu(ConnectionTest.java:114)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.changePassCodeShouldShowTheMainMenu(ConnectionTest.java:114)
+
+changeGreeting  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NumberFormatException: For input string: "#"
+	at ConnectionTest.changeGreeting(ConnectionTest.java:152)
+
+setGreetingShouldShowNewGreeting  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Record your greeting, then press the # key"
+);
+-> at ConnectionTest.setGreetingShouldShowNewGreeting(ConnectionTest.java:83)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.setGreetingShouldShowNewGreeting(ConnectionTest.java:83)
+
+loginWithIncorrectPasscode  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Incorrect passcode. Try again!"
+);
+-> at ConnectionTest.loginWithIncorrectPasscode(ConnectionTest.java:57)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.loginWithIncorrectPasscode(ConnectionTest.java:57)
+
+selectDeleteCurrentMessageShouldBeShowMessagesMenu  Time elapsed: 0.002 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to the current message
+Enter 2 to save the current message
+Enter 3 to delete the current message
+Enter 4 to return to the main menu"
+);
+-> at ConnectionTest.selectDeleteCurrentMessageShouldBeShowMessagesMenu(ConnectionTest.java:217)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.selectDeleteCurrentMessageShouldBeShowMessagesMenu(ConnectionTest.java:217)
+
+selectReturnToTheMainMenuShouldBeShowMainMenu  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to your messages
+Enter 2 to change your passcode
+Enter 3 to change your greeting"
+);
+-> at ConnectionTest.selectReturnToTheMainMenuShouldBeShowMainMenu(ConnectionTest.java:233)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.selectReturnToTheMainMenuShouldBeShowMainMenu(ConnectionTest.java:233)
+
+selectListenMessageShouldShowListenOptions  Time elapsed: 0.002 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to the current message
+Enter 2 to save the current message
+Enter 3 to delete the current message
+Enter 4 to return to the main menu"
+);
+-> at ConnectionTest.selectListenMessageShouldShowListenOptions(ConnectionTest.java:167)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.selectListenMessageShouldShowListenOptions(ConnectionTest.java:167)
+
+changePassCodeShouldChangeThePassCode  Time elapsed: 0.007 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to your messages
+Enter 2 to change your passcode
+Enter 3 to change your greeting"
+);
+-> at ConnectionTest.changePassCodeShouldChangeThePassCode(ConnectionTest.java:135)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.changePassCodeShouldChangeThePassCode(ConnectionTest.java:135)
+
+loginWhitCorrectPasscode  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to your messages
+Enter 2 to change your passcode
+Enter 3 to change your greeting"
+);
+-> at ConnectionTest.loginWhitCorrectPasscode(ConnectionTest.java:69)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.loginWhitCorrectPasscode(ConnectionTest.java:69)
+
+dialNotExistMailbox  Time elapsed: 0.004 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Incorrect mailbox number. Try again!"
+);
+-> at ConnectionTest.dialNotExistMailbox(ConnectionTest.java:46)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.dialNotExistMailbox(ConnectionTest.java:46)
+
+selectSaveCurrentMessagesShouldBeShowMessagesMenu  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter 1 to listen to the current message
+Enter 2 to save the current message
+Enter 3 to delete the current message
+Enter 4 to return to the main menu"
+);
+-> at ConnectionTest.selectSaveCurrentMessagesShouldBeShowMessagesMenu(ConnectionTest.java:201)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.selectSaveCurrentMessagesShouldBeShowMessagesMenu(ConnectionTest.java:201)
+
+connectionShouldStartInitialPrompt  Time elapsed: 0.001 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+consoleTelephone.speak(
+    "Enter mailbox number followed by #"
+);
+-> at ConnectionTest.connectionShouldStartInitialPrompt(ConnectionTest.java:26)
+Actually, there were zero interactions with this mock.
+
+	at ConnectionTest.connectionShouldStartInitialPrompt(ConnectionTest.java:26)
+
